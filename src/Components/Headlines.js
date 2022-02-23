@@ -11,17 +11,24 @@ const Headlines = () => {
         .then(error => console.log(error))
     }, []);
 
+    const today = new Date();
+    
+
     return (
         <div>
+            <h2>Top Stories</h2>
+            <p>{today.toDateString()}</p>
+            <div>
             {stories && stories.results.map((story) => {
                 return (
                     <Link to={`/${story.title}`} key={story.title}>
-                        <h2>{story.title}</h2>
+                        <h3>{story.title}</h3>
                     </Link>
                 )
              }
             )
             }
+            </div>
         </div>
     )
 }
