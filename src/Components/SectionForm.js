@@ -4,6 +4,12 @@ import Headlines from "./Headlines.js";
 const SectionForm = () => {
 
   const [topic, setTopic] = useState("home");
+  let section;
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    section = topic.toLowerCase();
+  }
 
   return (
     <main>
@@ -36,6 +42,7 @@ const SectionForm = () => {
           <option>World</option>
         </select>
       </label>
+      {/* <button onClick={(e) => handleSubmit(e)}>Find Articles</button> */}
     </form>
     <Headlines section={topic.toLowerCase()}/>
     </main>
