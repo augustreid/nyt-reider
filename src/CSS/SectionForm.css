@@ -1,15 +1,6 @@
-.details {
+.main-page {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding: 10%;  
-}
-
-a {
-  margin: 2%;
-}
-
-img {
-  width: 60vw;
 }

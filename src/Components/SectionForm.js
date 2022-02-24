@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../CSS/SectionForm.css";
 import Headlines from "./Headlines.js";
 
 const SectionForm = () => {
@@ -6,7 +7,7 @@ const SectionForm = () => {
   const [topic, setTopic] = useState("home");
 
   return (
-    <main>
+    <main className="main-page">
     <form>
       <label>
         <select value={topic} onChange={(e) => setTopic(e.target.value)}>
