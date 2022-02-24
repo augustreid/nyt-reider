@@ -1,21 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Article from "./Article";
 
-const Headlines = () => {
+const Headlines = ({section}) => {
+
   const [stories, setStories] = useState(null);
 
-  useEffect(() => {fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=pY5t6IMJSmRIZhilx7gJg50xVP8qwsOG")
+  useEffect(() => {fetch(`https://api.nytimes.com/svc/topstories/v2/${section}.json?api-key=pY5t6IMJSmRIZhilx7gJg50xVP8qwsOG`)
     .then(response => response.json())
     .then(data => setStories(data))
     .then(error => console.log(error))
-    }, []);
+    }, [section]);
 
   const today = new Date();
     
 
    return (
-    <div>
+    <section>
       <h2>Top Stories</h2>
       <p>{today.toDateString()}</p>
       <div>
@@ -28,7 +28,7 @@ const Headlines = () => {
           }
         )}
       </div>
-    </div>
+    </section>
   )
 }
 
