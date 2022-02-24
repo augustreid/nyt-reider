@@ -15,7 +15,7 @@ const Headlines = ({section}) => {
     
 
    return (
-    <div>
+    <section>
       <h2>Top Stories</h2>
       <p>{today.toDateString()}</p>
       <div>
@@ -28,7 +28,7 @@ const Headlines = ({section}) => {
           }
         )}
       </div>
-    </div>
+    </section>
   )
 }
 
