@@ -1,15 +1,13 @@
 import react from "react";
-import TopNav from "./TopNav.js";
-import Headlines from "./Headlines";
+import "../CSS/Home.css";
 import SectionForm from "./SectionForm";
 
 const Home = () => {
   return (
-
-    <main>
-      <h1>New York Times Reider</h1>
+    <section>
+      <h1 className="header">New York Times Reider</h1>
       <SectionForm />
-    </main>
+    </section>
     )
 }
 

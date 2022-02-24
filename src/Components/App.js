@@ -7,10 +7,12 @@ import Article from "./Article";
 function App() {
 
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/:id" element={<Article />} />
-    </Routes>
+    <main>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/:id" element={<Article />} />
+      </Routes>
+    </main>
   )
     
 }
