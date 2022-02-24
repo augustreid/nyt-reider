@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Article from "./Article";
 
 const Headlines = () => {
   const [stories, setStories] = useState(null);
@@ -21,7 +20,7 @@ const Headlines = () => {
       <div>
         {stories && stories.results.map((story) => {
           return (
-            <Link to={`/${story.title}`} key={story.title}>
+            <Link to={`${story.section}/${story.title}`} key={story.title}>
               <h3>{story.title}</h3>
             </Link>
             )
