@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import "../CSS/Article.css";
 
 const Article = () => {
 
@@ -27,7 +28,7 @@ const Article = () => {
   return (
     <section>
       {!loading && 
-      <div>
+      <div className="details">
         <h2>{story.title}</h2>
         <p>{story.byline}</p>
         <p>{story.abstract}</p>
