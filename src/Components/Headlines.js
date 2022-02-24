@@ -21,7 +21,7 @@ const Headlines = ({section}) => {
       <div>
         {stories && stories.results.map((story) => {
           return (
-            <Link to={`${story.section}/${story.title}`} key={story.title}>
+            <Link to={`/${story.title}`} key={story.title}>
               <h3>{story.title}</h3>
             </Link>
             )
