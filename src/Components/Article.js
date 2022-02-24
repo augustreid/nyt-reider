@@ -27,7 +27,12 @@ const Article = () => {
   return (
     <section>
       {!loading && 
+      <div>
       <h2>{story.title}</h2>
+      <p>{story.byline}</p>
+      <p>{story.abstract}</p>
+      <a href={story.url} target="_blank" rel="noreferrer noopener">Read Full Article</a>
+      </div>
     }
     </section>
   )
