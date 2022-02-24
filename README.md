@@ -22,8 +22,8 @@ When the user clicks on a headline, they will be taken to a page that displays t
 -  Hooks
 
 ## Illustrations
+<img width="966" alt="Screen Shot 2022-02-24 at 3 37 13 PM" src="https://user-images.githubusercontent.com/87552193/155620061-7d267f74-36ea-4e35-a1ad-674a3a1f49ef.png">
 
-<img width="966" alt="Screen Shot 2022-02-24 at 3 37 13 PM" src="https://user-images.githubusercontent.com/87552193/155619289-8d30c809-eb9b-4ece-aa5c-cd602
 
 <img width="1171" alt="Screen Shot 2022-02-24 at 3 37 57 PM" src="https://user-images.githubusercontent.com/87552193/155619306-1abee081-a45d-4ffd-b2bd-47ea131097f9.png">
 394686f.png">
