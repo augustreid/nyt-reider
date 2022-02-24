@@ -6,12 +6,9 @@ import SectionForm from "./SectionForm";
 const Home = () => {
   return (
 
-
     <main>
       <h1>New York Times Reider</h1>
-      {/* <TopNav /> */}
       <SectionForm />
-     {/* <Headlines /> */}
     </main>
     )
 }
